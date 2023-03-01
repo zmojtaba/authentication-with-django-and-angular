@@ -1,0 +1,22 @@
+@import "../../styles/theme.scss";
+
+mat-toolbar{
+    height: 100%;
+    background-color: $header_navbar_background;
+    color: $header_navbar_color;
+    padding: 0;
+
+    nav{
+        width: 100%;
+    }
+    .item{
+        color: $header_font_color;
+    }
+
+    .brand{
+        color: $header_font_color;
+        font-weight: 1000;
+        font-family: $brand_font_family;
+        font-size: 30px
+    }
+}

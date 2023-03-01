@@ -1,0 +1,49 @@
+@import "./styles/theme.scss";
+
+$sidbar_width :256px;
+nb-layout-header{
+    &.expanded{
+        margin-left: $side_bar_expanded_width;
+    }
+
+    &.collapsed{
+        margin-left: 56px;
+    }
+    ::ng-deep nav{
+        padding: 0;
+        height: $header_navbar_height;
+        
+        app-header {
+            width: 100%;
+        }
+    }
+
+    mat-toolbar{
+        height: 100%;
+        background-color: $header_navbar_background;
+        color: $header_navbar_color
+    }
+
+    
+}
+
+nb-sidebar{
+    background: $side-bar_background_color;
+    margin-top: -77px;
+    mat-icon{
+        cursor: pointer;
+    }
+
+    &.expanded{
+        margin-top : -75px;
+    }
+    .collapsed{
+        $sidbar_width:0px; 
+
+    }
+
+    ::ng-deep .main-container{
+        margin-top: -77px;
+    }
+    
+}
